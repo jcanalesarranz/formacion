@@ -9,13 +9,12 @@ if [ ! -f /opt/jdk1.7 ];
 then
 	echo "Obteniendo JDK7..."
 	cd /tmp
-#    wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/7u71-b14/jdk-7u71-linux-x64.tar.gz"
+    	wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/7u75-b13/jdk-7u75-linux-x64.tar.gz"
 	echo "Ejecutando JDK7..."
 	cd /opt
-	#tar -zxvf /vagrant/jdk-7u71-linux-x64.tar.gz
-    	tar -zxvf /tmp/jdk-7u71-linux-x64.tar.gz
+    	tar -zxvf /tmp/jdk-7u75-linux-x64.tar.gz
 
-    	ln -s /opt/jdk1.7.0_71 jdk1.7
+    	ln -s /opt/jdk1.7.0_75 jdk1.7
 	
 	touch /etc/profile.d/vagrant.sh
 	echo "export JAVA_HOME=/opt/jdk1.7" >> /etc/profile.d/vagrant.sh
