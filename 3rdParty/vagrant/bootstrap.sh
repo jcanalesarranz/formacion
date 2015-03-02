@@ -1,7 +1,7 @@
 echo "Instalando MySQL y apache2"
 sudo debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password password Passw0rd'
 sudo debconf-set-selections <<< 'mysql-server-5.5 mysql-server/root_password_again password Passw0rd'
-#sudo apt-get update
+sudo apt-get update
 sudo apt-get -y install mysql-server-5.5 apache2 unzip sshpass
 
 #Instalando jdk7
