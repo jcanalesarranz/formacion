@@ -32,12 +32,12 @@ Desde la administración de liferay
 Instalar Openoffice4
 ===========================
 
-Descargar de openoffice.org e instalar
+Descargar de openoffice.org 4 e instalar
 
 Openoffice4 in background
 ===========================
 
-soffice -headless -accept="socket,host=127.0.0.1,port=8100;urp;" -nofirststartwizard
+/opt/openoffice4/program/soffice -headless -accept="socket,host=127.0.0.1,port=8100;urp;" -nofirststartwizard &
 
 
 
