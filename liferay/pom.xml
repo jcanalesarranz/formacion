@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.miguelangeljulvez</groupId>
+        <artifactId>formacion</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.miguelangeljulvez</groupId>
+    <artifactId>liferay</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>ext</module>
+        <module>hooks</module>
+        <module>layouttpl</module>
+        <module>portlets</module>
+        <module>themes</module>
+    </modules>
+
+    <properties>
+        <liferay.version>6.2.2</liferay.version>
+        <liferay.maven.plugin.version>6.2.10.11</liferay.maven.plugin.version>
+        <liferay.auto.deploy.dir>/Users/miguel/Documents/proyectos/personal/installation/liferay-portal-6.2.2-ce-ga3/deploy</liferay.auto.deploy.dir>
+        <liferay.app.server.deploy.dir>/Users/miguel/Documents/proyectos/personal/installation/liferay-portal-6.2.3-ce-ga3/tomcat-7.0.42/webapps</liferay.app.server.deploy.dir>
+        <liferay.app.server.lib.global.dir>/Users/miguel/Documents/proyectos/personal/installation/liferay-portal-6.2.3-ce-ga3/tomcat-7.0.42/lib/ext</liferay.app.server.lib.global.dir>
+        <liferay.app.server.portal.dir>/Users/miguel/Documents/proyectos/personal/installation/liferay-portal-6.2.2-ce-ga3/tomcat-7.0.42/webapps/ROOT</liferay.app.server.portal.dir>
+    </properties>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>liferay-plugin-repo</id>
+            <name>Liferay Repo</name>
+            <url>https://repository.liferay.com/nexus/content/groups/liferay-ce/</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+    <repositories>
+        <repository>
+            <id>liferay-repo</id>
+            <name>Liferay Repo</name>
+            <url>https://repository.liferay.com/nexus/content/groups/liferay-ce/</url>
+        </repository>
+    </repositories>
+</project>
