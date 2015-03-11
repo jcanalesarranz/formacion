@@ -15,5 +15,6 @@
     </parent>
 
     <modules>
-    </modules>
+    <module>search</module>
+  </modules>
 </project>

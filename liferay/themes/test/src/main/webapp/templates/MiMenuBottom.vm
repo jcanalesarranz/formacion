@@ -1,0 +1,21 @@
+#foreach ($nav_item in $nav_items)
+
+        #if ($nav_item.getName() == "menu_bottom")
+        <ul class="child-menu" role="menu">
+            #foreach ($nav_child in $nav_item.getChildren())
+                #set ($nav_child_attr_selected="")
+                #set ($nav_child_css_class = "false")
+
+                #if ($nav_child.isSelected())
+                    #set ($nav_child_attr_selected="aria-selected='true'")
+                    #set ($nav_child_css_class = "selected")
+                #end
+
+                <li class="$nav_child_css_class" id="layout_$nav_child.getLayoutId()" $nav_child_attr_selected role="presentation">
+                    <a aria-labelledby="layout_$nav_child.getLayoutId()" href="$nav_child.getURL()" $nav_child.getTarget() role="menuitem">$nav_child.getName()</a>
+                </li>
+            #end
+        </ul>
+    #end
+</li>
+#end

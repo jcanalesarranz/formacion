@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 6.1.0//EN"
+        "http://www.liferay.com/dtd/liferay-look-and-feel_6_1_0.dtd">
+
+<look-and-feel>
+
+    <compatibility>
+        <version>6+</version>
+    </compatibility>
+
+    <theme id="default" name="Tema por defecto del portal">
+        <settings>
+            <setting key="portlet-setup-show-borders-default" value="false"/>
+            <setting configurable="true" type="text" key="variable1" value="valor1" />
+            <setting configurable="true" type="text" key="variable2" value="valor2" />
+        </settings>
+
+        <!--
+        <layout-templates>
+            <custom>
+                <layout-template id="home.layout.default.themes.liferay.grupocmc.es" name="Home del portal">
+                    <template-path>/layouttpl/home.tpl</template-path>
+                    <wap-template-path>/layouttpl/home.wap.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/home.png</thumbnail-path>
+                </layout-template>
+                <layout-template id="subhome.layout.default.themes.liferay.grupocmc.es" name="Sub-homes del portal">
+                    <template-path>/layouttpl/subhome.tpl</template-path>
+                    <wap-template-path>/layouttpl/subhome.wap.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/subhome.png</thumbnail-path>
+                </layout-template>
+                <layout-template id="doscolumnas.layout.default.themes.liferay.grupocmc.es" name="Listado en dos columnas">
+                    <template-path>/layouttpl/doscolumnas.tpl</template-path>
+                    <wap-template-path>/layouttpl/doscolumnas.wap.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/doscolumnas.png</thumbnail-path>
+                </layout-template>
+                <layout-template id="unacolumna.layout.default.themes.liferay.grupocmc.es" name="Una columna">
+                    <template-path>/layouttpl/unacolumna.tpl</template-path>
+                    <wap-template-path>/layouttpl/unacolumna.wap.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/unacolumna.png</thumbnail-path>
+                </layout-template>
+            </custom>
+        </layout-templates>
+        -->
+    </theme>
+
+</look-and-feel>
